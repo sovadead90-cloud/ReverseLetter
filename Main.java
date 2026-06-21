@@ -3,6 +3,7 @@ public class Main {
         String str = "J@va the be$t!123";
         System.out.println(str);
         System.out.println(reverse(str));
+        System.out.print("Main2");
     }
 
     public static String reverse(String str) {
