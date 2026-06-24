@@ -5,6 +5,7 @@ public class Main {
         String str = "J@va the be$t!123";
         System.out.println(str);
         System.out.println(reverseLetters(str));
+        System.out.println("sasdasd");
     }
 
     public static String reverseLetters(String str) {
