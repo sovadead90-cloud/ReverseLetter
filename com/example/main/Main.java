@@ -1,12 +1,13 @@
+package com.example.main;
+
 public class Main {
     public static void main(String[] args) {
         String str = "J@va the be$t!123";
         System.out.println(str);
-        System.out.println(reverse(str));
-        System.out.print("Main2");
+        System.out.println(reverseLetters(str));
     }
 
-    public static String reverse(String str) {
+    public static String reverseLetters(String str) {
         if (str == null || str.isEmpty()) {
             return "";
         }
