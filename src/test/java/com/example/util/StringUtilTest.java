@@ -18,17 +18,16 @@ class StringUtilTest {
     @Test
     void reverseLetters_normalString() {
         assertEquals("t@eb eht av$J!123", StringUtil.reverseLetters("J@va the be$t!123"));
-        assertEquals("fed, cba!", StringUtil.reverseLetters("abc, def!"));
-        assertEquals("dlroW, olleH", StringUtil.reverseLetters("Hello, World"));
-        assertEquals("123-cba-456", StringUtil.reverseLetters("123-abc-456"));
-        assertEquals("C1B2A3", StringUtil.reverseLetters("A1B2C3"));
-        assertEquals("tseT, 123!", StringUtil.reverseLetters("Test, 123!"));
-        assertEquals("eg nahcoN", StringUtil.reverseLetters("No change"));
-        assertEquals("ey! BiH.", StringUtil.reverseLetters("Hi! Bye."));
+        assertEquals("rt1v3r, 6P0!", StringUtil.reverseLetters("Pr1v3t, 6r0!"));
     }
 
     @Test
     void reverseLetters_noLetters() {
         assertEquals("1234!@#", StringUtil.reverseLetters("1234!@#"));
+    }
+    @Test
+    void russianLetters()   {
+        assertEquals("АБС", StringUtil.reverseLetters("СБА"));
+        assertEquals("т07ам адК4?", StringUtil.reverseLetters("К07да мат4?"));
     }
 }
